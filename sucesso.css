@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+.sucesso {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    width: 490px;
+    height: 250px;
+    box-shadow: rgba(192, 186, 186, 0.24) 0px 3px 8px;
+    background-color: #000000;
+    color: #ddd;
+}

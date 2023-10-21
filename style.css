@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+/* INITIALS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+main {
+  width: 100%;
+  box-shadow: rgba(192, 186, 186, 0.24) 0px 3px 8px;
+
+}
+
+span {
+  color: #333131;
+
+}
+
+img {
+  border-radius: 25px
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 70px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #0d2e75;
+  box-shadow: 0 1px 0 #000000;
+  max-width: 100%;
+  width: 100%;
+
+}
+
+.logo {
+  color: white;
+  font-size: 25px
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* HOME */
+
+section#home {
+  height: calc(100vh + 80px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 50px;
+  width: 100%;
+  gap: 50px;
+}
+
+.home-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 300px;
+  margin-top: 110px;
+}
+
+.home-info button {
+  border: none;
+  width: 150px;
+  padding: 10px;
+  background-color: #e2e617;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 100px;
+}
+
+button {
+  transition: all 0.3s;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.1);
+
+
+}
+
+.home-info button a {
+  color: white;
+}
+
+
+
+
+
+.home-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-img img {
+  width: 100%;
+  height: 550px;
+  /*animation: float 5s ease-in-out infinite;*/
+
+
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+/* PROJECTS */
+
+
+
+section#projects {
+  height: calc(100vh + 80px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.project-img {
+  width: 50%;
+}
+
+.project-img img {
+  box-shadow: 0 1px 2px #0003;
+  object-fit: cover;
+  width: 80%;
+}
+
+.project-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.swiper {
+  width: 95vw;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: color: #333131;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(70, 70, 224);
+}
+
+
+/*Sobre */
+
+.main-sobre {
+  text-align: center;
+  color: color: #333131;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.main-sobre h2 {
+  padding: 20px;
+
+}
+h3{
+  color: #4e4d4d;
+}
+
+.main-sobre p {
+  line-height: 25px;
+
+}
+
+
+section#Sobre {
+  height: calc(100vh + 80px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* CONTACTS */
+
+#contact {
+  height: calc(100vh + 80px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.enviado {
+  color: wheat;
+  font-size: 25px;
+  text-align: center;
+}
+
+.voltar {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 15px;
+  transition: 1s;
+}
+
+.voltar:hover {
+
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(1.4)
+}
+
+
+
+
+.btn2 {
+  padding: 10px;
+  width: 100px;
+  background-color:#0d2e75;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contato-main {
+  color: color: #333131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato-main p {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.contato-main a img {
+  width: 120px;
+  padding-top: 10px;
+  align-items: center;
+
+}
+
+.contato-main a img {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.contato-main a img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+
+}
+
+.contato-main a .likedin {
+  width: 45px;
+  border-radius: 20px;
+  margin-right: 33px;
+}
+
+
+.redes {
+  display: flex;
+}
+
+
+
+h2 {
+  color: #494747;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  padding: 5px 20px;
+
+}
+
+
+form {
+  width: 400px;
+  height: 360px;
+  background-color: #0d2e75;
+  border-radius: 5px;
+  box-shadow: rgba(192, 186, 186, 0.24) 0px 3px 8px;
+}
+
+form input {
+  margin-top: 5px;
+}
+
+
+form textarea {
+  margin-top: 5px;
+
+}
+
+input, textarea, button {
+  box-shadow: 0 1px 2px #ddd;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+
+
+#contact form button:hover {
+  opacity: 1;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 50px;
+  text-align: center;
+  color: rgb(189, 182, 182);
+  width: 100%;
+  height: 90px;
+  box-shadow: rgba(218, 201, 201, 0.24) 0px 3px 8px;
+
+
+}
+
+/* MOBILE */
+
+@media (max-width: 667px) {
+  header {
+    justify-content: center;
+  }
+
+  .logo{
+   font-size: 18px;
+  }
+
+  section#home {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .home-info, .home-img {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .swiper-slide {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .project-info {
+    width: 80%;
+  }
+
+  .main-sobre p {
+    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+ 
+
+
+
+  #Sobre h2 {
+    padding-right: 30px;
+
+  }
+
+  main {
+
+    width: 400px;
+    height: 538px;
+  }
+
+
+.home-img{
+  display: none;
+}
+
+main{
+  width: 100%;
+}
+
+#contact form{
+  width: 100%;
+}
+
+.home-info{
+ display: flex;
+width: 100%;
+margin-right: 180px;
+margin-bottom: 120px;
+}
+
+}
